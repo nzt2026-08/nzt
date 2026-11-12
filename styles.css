@@ -185,6 +185,18 @@ body {
   aspect-ratio: auto;
 }
 
+.rice-card.is-flipped {
+  height: 840px;
+}
+
+.pasta-card.is-flipped {
+  height: 840px;
+}
+
+.pizza-card.is-flipped {
+  height: 1020px;
+}
+
 .lasagne-card.is-flipped {
   height: 1020px;
 }
@@ -210,6 +222,18 @@ body {
 
   .recipe-card.is-flipped {
     height: 800px;
+  }
+
+  .rice-card.is-flipped {
+    height: 960px;
+  }
+
+  .pasta-card.is-flipped {
+    height: 960px;
+  }
+
+  .pizza-card.is-flipped {
+    height: 1140px;
   }
 
   .lasagne-card.is-flipped {
