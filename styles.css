@@ -189,6 +189,10 @@ body {
   height: 840px;
 }
 
+.fried-rice-card.is-flipped {
+  height: 880px;
+}
+
 .pasta-card.is-flipped {
   height: 840px;
 }
@@ -226,6 +230,10 @@ body {
 
   .rice-card.is-flipped {
     height: 960px;
+  }
+
+  .fried-rice-card.is-flipped {
+    height: 1040px;
   }
 
   .pasta-card.is-flipped {
