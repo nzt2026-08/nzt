@@ -11,11 +11,11 @@
 
 <body>
     <main class="container">
-        <h1>Rezepte <br> "Probiere und entdecke neue Rezepte"</h1>
-
-        <section class="recipe-category">
-            <h2>Herzhafte Rezepte</h2>
-            <div class="gallery">
+        <header class="page-header">
+            <h1>Rezepte</h1>
+            <p class="tagline">Probiere und entdecke neue Rezepte</p>
+        </header>
+        <div class="gallery">
             <button class="flip-card recipe-card" type="button" aria-label="Bild umdrehen" aria-pressed="false">
                 <span class="flip-card-inner">
                     <span class="card-face card-front">
@@ -312,7 +312,8 @@ Guten Appetit! 🥢❤️</span>
                     <span class="card-face card-front">
                         <img src="you-le-l-mqDIEwcKk-unsplash.jpg" alt="">
                     </span>
-                    <span class="card-face card-back" aria-hidden="true">Lass dich inspirieren!</span>
+                    <span class="card-face card-back" aria-hidden="true"></span>
+                    <span class="card-face card-back" aria-hidden="true"></span>
                 </span>
             </button>
             <button class="flip-card" type="button" aria-label="Bild umdrehen" aria-pressed="false">
@@ -323,11 +324,6 @@ Guten Appetit! 🥢❤️</span>
                     <span class="card-face card-back" aria-hidden="true">Lass dich inspirieren!</span>
                 </span>
             </button>
-            </div>
-        </section>
-        <section class="recipe-category">
-            <h2>Frühstück &amp; Süsses</h2>
-            <div class="gallery">
             <button class="flip-card" type="button" aria-label="Bild umdrehen" aria-pressed="false">
                 <span class="flip-card-inner">
                     <span class="card-face card-front">
@@ -336,11 +332,6 @@ Guten Appetit! 🥢❤️</span>
                     <span class="card-face card-back" aria-hidden="true">Lass dich inspirieren!</span>
                 </span>
             </button>
-            </div>
-        </section>
-        <section class="recipe-category">
-            <h2>Backwaren</h2>
-            <div class="gallery">
             <button class="flip-card" type="button" aria-label="Bild umdrehen" aria-pressed="false">
                 <span class="flip-card-inner">
                     <span class="card-face card-front">
@@ -349,8 +340,7 @@ Guten Appetit! 🥢❤️</span>
                     <span class="card-face card-back" aria-hidden="true">Lass dich inspirieren!</span>
                 </span>
             </button>
-            </div>
-        </section>
+        </div>
     </main>
     <script>
         document.querySelectorAll(".flip-card").forEach((card) => {

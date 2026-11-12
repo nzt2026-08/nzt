@@ -1,48 +1,52 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
+  color: #43372f;
+  background: #f7f3ed;
 }
 
 body {
   margin: 0;
   min-height: 100dvh;
-  background: Canvas;
-  color: CanvasText;
+  background:
+    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.9), transparent 55%),
+    #f7f3ed;
+  color: #43372f;
 }
 
 .container {
   width: min(1100px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1.5rem 0 4rem;
 }
 
-h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 650;
-  margin: 0 0 2rem;
+.page-header {
+  padding: 2rem 0 2.75rem;
   text-align: center;
-  color: rgb(249, 180, 127);
 }
 
-.recipe-category {
-  margin-top: 3rem;
-}
-
-.recipe-category h2 {
-  margin: 0 0 1.25rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid rgba(113, 81, 64, 0.22);
+.page-header h1 {
+  margin: 0;
   color: #5e4034;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  font-weight: 750;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: 0.75rem 0 0;
+  color: #b19a79;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.025em;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: clamp(1rem, 2.5vw, 1.75rem);
 }
 
 .flip-card {
@@ -50,15 +54,15 @@ h1 {
   aspect-ratio: 4 / 3;
   padding: 0;
   border: 0;
-  border-radius: 8px;
+  border-radius: 16px;
   background: transparent;
   perspective: 1000px;
   cursor: pointer;
 }
 
 .flip-card:focus-visible {
-  outline: 3px solid rgb(249, 180, 127);
-  outline-offset: 4px;
+  outline: 3px solid #b19a79;
+  outline-offset: 5px;
 }
 
 .flip-card-inner {
@@ -83,7 +87,8 @@ h1 {
   place-items: center;
   border-radius: inherit;
   backface-visibility: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(94, 64, 52, 0.1);
+  box-shadow: 0 12px 30px rgba(67, 55, 47, 0.14);
 }
 
 .card-front img {
@@ -195,6 +200,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .page-header {
+    padding: 1.5rem 0 2rem;
+  }
+
   .gallery {
     grid-template-columns: 1fr;
   }
